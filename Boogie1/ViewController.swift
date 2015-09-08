@@ -13,9 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let filePath = NSBundle.mainBundle().pathForResource("small", ofType: "txt"), contents = NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding, error: nil) {
-            findTheDuplicates(contents as String)
-        }
+        findTheDuplicates(NSBundle.mainBundle().pathForResource("small", ofType: "txt")! as String)
     }
 
     override func didReceiveMemoryWarning() {

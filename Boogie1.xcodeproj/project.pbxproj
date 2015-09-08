@@ -162,6 +162,7 @@
 		B0E187EE1B2E2BD00059B628 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "iOS Boogie";
 				TargetAttributes = {
@@ -419,6 +420,7 @@
 				B0E188171B2E2BD00059B628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0E188181B2E2BD00059B628 /* Build configuration list for PBXNativeTarget "Boogie1Tests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +429,7 @@
 				B0E1881A1B2E2BD00059B628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
