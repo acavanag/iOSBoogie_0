@@ -56,9 +56,11 @@ class ViewController: UIViewController {
         
         // 5. add an entry in the dictionary for each word and increment the 'count' each time you see it again in the dictionary
         for i in 0...(wordList.count-1) {
+            // line below: if wordCount already contains the key, increment
             if let curr = wordCount[wordList[i]]{
                 wordCount[wordList[i]] = wordCount[wordList[i]]! + 1
             }
+            // else, create the key/value pair and initialize the count to 0
             else {
                 wordCount[wordList[i]] = 1
             }
@@ -72,7 +74,6 @@ class ViewController: UIViewController {
         
         // 8. loop through the array and print out the count for each word
         for i in 0...(wordCount.count-1) {
-//            print(sortedKeys[i])
             print("Word: \(sortedKeys[i]), count: \(wordCount[sortedKeys[i]]!)\n" )
         }
         
